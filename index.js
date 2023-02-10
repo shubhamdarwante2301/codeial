@@ -3,7 +3,7 @@ const app = express();
 const port = 8000;
 
 // express router
-app.get('/', require('./routes'));
+app.use('/', require('./routes'));
 
 app.listen(port, function(err) {
     if(err) {
