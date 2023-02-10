@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
-app.get('/', function(req, res) {
-    return res.send('<h1>shubham</h1>')
-})
+// express router
+app.get('/', require('./routes'));
 
 app.listen(port, function(err) {
     if(err) {
